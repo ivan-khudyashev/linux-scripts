@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -o nounset
+set -o errexit
 # This script repack deb-packages in deb with same name but packed with gzip
 # This is necessary if used old `dpkg` utility with new deb-packages
 TMPDIR=/tmp/dpkg_repack_dir

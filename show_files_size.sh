@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -o nounset
+set -o errexit
 # This script take 1 argument - directory and show size of contents all child elements
 #  in this directory
 checking_directory=`pwd`

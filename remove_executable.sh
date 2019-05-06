@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -o nounset
+set -o errexit
 # This script remove all executable files from dir in argument
 #  If there no argument, then - from current dir
 # 0. Define variables
