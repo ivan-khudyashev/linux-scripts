@@ -33,7 +33,7 @@ then
 fi
 # 2. Remove all executables
 CNT_FOR_DEL=$(find ${ACTION_DIR} -maxdepth 1 -type f -executable | wc -l)
-if [ ${CNT_FOR_DEL} -gt 0 ] && [ ${CNT_FOR_DEL} -lt ${MAX_TO_DEL} ]
+if [ ${CNT_FOR_DEL} -gt 0 ] && [ ${CNT_FOR_DEL} -le ${MAX_TO_DEL} ]
 then
     rm $(find ${ACTION_DIR} -maxdepth 1 -type f -executable)
     echo "Deletion complete"
