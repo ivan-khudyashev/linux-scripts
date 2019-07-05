@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -o nounset # save for using undeclare variable
+set -o errexit # immediately exit on error, save from continue work on error
 # Script for list all files in dir
 #  List all files in directory and all subdirectories
 # 0. Define variables
